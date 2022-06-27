@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 import { useNotification } from 'web3uikit'
 import { ethers } from 'ethers'
 
-export const LotteryEntrance = () => {
+const LotteryEntrance = () => {
     const { Moralis, isWeb3Enabled, chainId: chainIdHex } = useMoralis()
     // These get re-rendered every time due to our connect button!
     const chainId = parseInt(chainIdHex)
@@ -142,3 +142,5 @@ export const LotteryEntrance = () => {
         </div>
     )
 }
+
+export default LotteryEntrance
